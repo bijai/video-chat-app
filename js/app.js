@@ -268,10 +268,10 @@ function myjsapp(peerClient) {
             $('.end-call').click()
         },
         setTheirVideo : function (stream) {
-            $('#their-video').prop('src', URL.createObjectURL(stream));
+            $('#their-video').prop('srcObject', stream);
         },
         setMyVideo : function (stream) {
-            $('#my-video').prop('src', URL.createObjectURL(stream));
+            $('#my-video').prop('srcObject', stream);
         },
         showError : function (msg) {
             
